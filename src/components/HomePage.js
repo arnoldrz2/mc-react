@@ -2,7 +2,6 @@ import Reach from "react";
 import "../styles/HomePage.css";
 
 const HomePage = () => (
-    <div>
         {/* Nav */}
         <nav class="navbar navbar-deafult navbar-fixed-top">
             <div class="container-fluid">
@@ -162,7 +161,6 @@ const HomePage = () => (
             <button type="button" class="btn btn-secondary">Next</button>
         </div>
 
-    </div>
 );
 
 export default HomePage;
