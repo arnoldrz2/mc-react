@@ -12,7 +12,6 @@ const SplashPage = () => (
                 <button type="button" className="btn btn-secondary">I'm a tattoo artist </button>          
             </div>
     </header>
-
 );
 
 export default SplashPage;

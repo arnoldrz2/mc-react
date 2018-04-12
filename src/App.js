@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import SplashPage from './components/SplashPage';
 import ArtistSignUp from './components/ArtistSignUp';
 import HomePage from './components/HomePage';
-
+import UserPrefForm from './components/UserPrefForm';
 
 const Splash = () => (
   <div>
@@ -23,13 +23,21 @@ const ArtSignUp = () => (
   </div>
 )
 
+const UserPref = () => (
+  <div>
+    <UserPrefForm/>
+  </div>
+)
+
 const AppLinks = () => (
   <Router>
     <div>
       <Route exact path="/" component={Splash}/>
       <Route path="/home" component={Home}/>
       <Route path="/artistsignup" component={ArtSignUp}/>
+      <Route path="/userprefform" component={UserPref}/>
     </div>
   </Router>
 )
+
 export default AppLinks;
