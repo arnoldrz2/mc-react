@@ -1,30 +1,30 @@
-import Reach from "react";
+import React from "react";
 import "../styles/HomePage.css";
 
 const HomePage = () => (
-        {/* Nav */}
+    <div className="hpwrap">
         <nav class="navbar navbar-deafult navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Moving Canvas</a>
+                    <a class="navbar-brand" href="">Moving Canvas</a>
                 </div>
                 <ul class="nav navbar-right">
-                    <li><a href="#">Login</a></li>
+                    <li><a href="">Login</a></li>
                 </ul>
             </div>
         </nav>
-        {/* Top Area Image */}
-        <div class= "header-container">
+        <div class="header-container">
             <div class="header-img">
-                <img src="https://static.pexels.com/photos/573294/pexels-photo-573294.jpeg" height="700" width="100%"/>
+                {/* Top Area Image */}
+                <img src="https://static.pexels.com/photos/573294/pexels-photo-573294.jpeg" height="700" width="100%" alt="backgroundimg" />
             </div>
         </div>
-        {/* Text over Top Area Image */}
         <div class="welcome-container">
-            <p class= "welcome"><b> Matching</b> isn't only for dating.</p>
+            {/* Text over Top Area Image */}
+            <p class="welcome"><b>Matching</b> isn't only for dating.</p>
         </div>
-        {/* Category Container */}
         <div class="browse-container">
+            {/* Category Container */}
             <div class="browse-text">
                 <p>Choose your desired tattoo style to begin.</p>
             </div>
@@ -33,7 +33,7 @@ const HomePage = () => (
                 <div class="col-md-3">
                     <div class="thumbnail">
                         <a href="/w3images/lights.jpg">
-                            <img src="https://image.ibb.co/kTJPhx/black_and_gray.png" alt="Lights" style="width:200px"/>
+                            <img src="https://image.ibb.co/kTJPhx/black_and_gray.png" class="cate-img" alt="Lights"/>
                             <div class="caption">
                                 <p class="col-text">Black & Gray</p>
                             </div>
@@ -43,7 +43,7 @@ const HomePage = () => (
                 <div class="col-md-3">
                     <div class="thumbnail">
                         <a href="/w3images/nature.jpg">
-                            <img src="https://preview.ibb.co/kwRo9c/dotwork.png" alt="Nature" style="width:200px"/>
+                            <img src="https://preview.ibb.co/kwRo9c/dotwork.png" class="cate-img" alt="Nature"/>
                             <div class="caption">
                                 <p class="col-text">Dotwork</p>
                             </div>
@@ -53,7 +53,7 @@ const HomePage = () => (
                 <div class="col-md-3">
                     <div class="thumbnail">
                         <a href="/w3images/fjords.jpg">
-                            <img src="https://preview.ibb.co/kDokpc/watercolor.png" alt="Fjords" style="width:200px"/>
+                            <img src="https://preview.ibb.co/kDokpc/watercolor.png" class="cate-img" alt="Fjords"/>
                             <div class="caption">
                                 <p class="col-text">Watercolor</p>
                             </div>
@@ -63,7 +63,7 @@ const HomePage = () => (
                 <div class="col-md-3">
                     <div class="thumbnail">
                         <a href="/w3images/nature.jpg">
-                            <img src="https://preview.ibb.co/kxHBUc/realism.png" alt="Nature" style="width:200px"/>
+                            <img src="https://preview.ibb.co/kxHBUc/realism.png" class="cate-img" alt="Nature"/>
                             <div class="caption">
                                 <p class="col-text">Realism</p>
                             </div>
@@ -75,7 +75,7 @@ const HomePage = () => (
                 <div class="col-md-3">
                     <div class="thumbnail">
                         <a href="/w3images/nature.jpg">
-                            <img src="https://image.ibb.co/k2Eapc/traditional.png" alt="Traditional" style="width:200px"/>
+                            <img src="https://image.ibb.co/k2Eapc/traditional.png" class="cate-img" alt="Traditional"/>
                             <div class="caption">
                                 <p class="col-text">Traditional</p>
                             </div>
@@ -85,7 +85,7 @@ const HomePage = () => (
                 <div class="col-md-3">
                     <div class="thumbnail">
                         <a href="/w3images/nature.jpg">
-                        <img src="https://image.ibb.co/c2zfNx/japanese.png" alt="Japanese" style="width:200px"/>
+                        <img src="https://image.ibb.co/c2zfNx/japanese.png" class="cate-img" alt="Japanese"/>
                             <div class="caption">
                                 <p class="col-text">Japanese</p>
                             </div>
@@ -95,7 +95,7 @@ const HomePage = () => (
                 <div class="col-md-3">
                     <div class="thumbnail">
                         <a href="/w3images/nature.jpg">
-                            <img src="https://image.ibb.co/kDPKFH/geometric.png" alt="Geometric" style="width:200px"/>
+                            <img src="https://image.ibb.co/kDPKFH/geometric.png" class="cate-img" alt="Geometric"/>
                             <div class="caption">
                                 <p class="col-text">Geometric</p>
                             </div>
@@ -105,7 +105,7 @@ const HomePage = () => (
                 <div class="col-md-3">
                     <div class="thumbnail">
                         <a href="/w3images/nature.jpg">
-                            <img src="https://image.ibb.co/mDuEhx/tribal.png" alt="Tribal" style="width:200px"/>
+                            <img src="https://image.ibb.co/mDuEhx/tribal.png" class="cate-img" alt="Tribal"/>
                             <div class="caption">
                                 <p class="col-text">Tribal</p>
                             </div>
@@ -117,7 +117,7 @@ const HomePage = () => (
                 <div class="col-md-3">
                     <div class="thumbnail">
                         <a href="/w3images/nature.jpg">
-                            <img src= "https://image.ibb.co/c9vLNx/horror_surrealism.png" alt="Nature" style="width:200px"/>
+                            <img src= "https://image.ibb.co/c9vLNx/horror_surrealism.png" class="cate-img" alt="Nature"/>
                             <div class="caption">
                                 <p class="col-text">Horror & Surrealism</p>
                             </div>
@@ -127,7 +127,7 @@ const HomePage = () => (
                 <div class="col">
                     <div class="thumbnail">
                         <a href="/w3images/nature.jpg">
-                            <img src="https://image.ibb.co/hH1YaH/hand_poked.png" alt="hand-poked" style="width:200px"/>
+                            <img src="https://image.ibb.co/hH1YaH/hand_poked.png" class="cate-img" alt="hand-poked"/>
                             <div class="caption">
                                 <p class="col-text">Hand-Poked</p>
                             </div>
@@ -137,7 +137,7 @@ const HomePage = () => (
                 <div class="col">
                     <div class="thumbnail">
                         <a href="/w3images/nature.jpg">
-                        <img src= "https://image.ibb.co/nKo1Uc/lettering.png" alt="Lettering" style="width:200px"/>
+                        <img src= "https://image.ibb.co/nKo1Uc/lettering.png" class="cate-img" alt="Lettering"/>
                             <div class="caption">
                                 <p class="col-text">Lettering</p>
                             </div>
@@ -147,7 +147,7 @@ const HomePage = () => (
                 <div class="col-md-3">
                     <div class="thumbnail">
                         <a href="/w3images/nature.jpg">
-                        <img src="https://image.ibb.co/m5ex2x/fineline.png" alt="Responsive image" style="width:200px"/>
+                        <img src="https://image.ibb.co/m5ex2x/fineline.png" class="cate-img" alt="fineline"/>
                             <div class="caption">
                                 <p class="col-text">Fine-Line</p>
                             </div>
@@ -156,10 +156,11 @@ const HomePage = () => (
                 </div>
             </div>
         </div>
-        {/* Next Button */}
         <div class="nextbutton">
+            {/* Next Button */} 
             <button type="button" class="btn btn-secondary">Next</button>
         </div>
+    </div>
 
 );
 

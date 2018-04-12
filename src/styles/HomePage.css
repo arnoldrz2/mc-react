@@ -182,7 +182,12 @@ only screen and (max-device-width: 940px){
   color: white;
 }
 
+.cate-img {
+  width: 200px;
+}
+
+
 @media (max-width:700px) {
 
-  }
+
 }

@@ -17,9 +17,9 @@ const About = () => (
   </div>
 )
 
-const Topic = ({ match }) => (
+const Topic = () => (
   <div>
-    <h3>{match.params.topicId}</h3>
+    <HomePage/>
   </div>
 )
 
@@ -64,7 +64,7 @@ const BasicExample = () => (
 
       <Route exact path="/" component={Home}/>
       <Route path="/about" component={About}/>
-      <Route path="/topics" component={Topics}/>
+      <Route path="/topics" component={Topic}/>
     </div>
   </Router>
 )

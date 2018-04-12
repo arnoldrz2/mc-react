@@ -108,4 +108,4 @@ const ArtistSignUp = () => (
   </div>
 );
 
-export default ArtistSignUp
+export default ArtistSignUp;
