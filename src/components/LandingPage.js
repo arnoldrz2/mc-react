@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import AppRoutes from "../App.js";
-import "../styles/SplashPage.css";
+import "../styles/LandingPage.css";
 
 
 const SplashPage = () => (

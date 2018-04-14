@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import SplashPage from './components/SplashPage';
+import LandingPage from './components/LandingPage';
 import ArtistSignUp from './components/ArtistSignUp';
 import HomePage from './components/HomePage';
 import UserPrefForm from './components/UserPrefForm';
 
-const Splash = () => (
+const Landing = () => (
   <div>
-    <SplashPage/>
+    <LandingPage/>
   </div>
 )
 
@@ -32,7 +32,7 @@ const UserPref = () => (
 const AppRoutes = () => (
   <Router>
     <div>
-      <Route exact path="/" component={Splash}/>
+      <Route exact path="/" component={Landing}/>
       <Route path="/home" component={Home}/>
       <Route path="/artistsignup" component={ArtSignUp}/>
       <Route path="/userprefform" component={UserPref}/>

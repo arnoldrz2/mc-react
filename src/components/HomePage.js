@@ -9,7 +9,7 @@ const HomePage = () => (
                     <a class="navbar-brand" href="">Moving Canvas</a>
                 </div>
                 <ul class="nav navbar-right">
-                    <li><a href="">Login</a></li>
+                    <li><a href="">Sign In</a></li>
                 </ul>
             </div>
         </nav>
@@ -21,7 +21,7 @@ const HomePage = () => (
         </div>
         <div class="welcome-container">
             {/* Text over Top Area Image */}
-            <p class="welcome"><b>Matching</b> isn't only for dating.</p>
+            <p class="welcome">Find your <b>Artist.</b></p>
         </div>
         <div class="browse-container">
             {/* Category Container */}
