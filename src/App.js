@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import SplashPage from './components/SplashPage';
 import ArtistSignUp from './components/ArtistSignUp';
 import HomePage from './components/HomePage';
@@ -29,7 +29,7 @@ const UserPref = () => (
   </div>
 )
 
-const AppLinks = () => (
+const AppRoutes = () => (
   <Router>
     <div>
       <Route exact path="/" component={Splash}/>
@@ -40,4 +40,4 @@ const AppLinks = () => (
   </Router>
 )
 
-export default AppLinks;
+export default AppRoutes;
