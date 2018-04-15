@@ -1,164 +1,174 @@
 import React from "react";
+import "../styles/reset.css";
 import "../styles/HomePage.css";
 
 const HomePage = () => (
     <div className="hpwrap">
-        <nav class="navbar navbar-deafult navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="">Moving Canvas</a>
+        <nav className="navbar navbar-deafult navbar-fixed-top">
+            <div className="container-fluid">
+                <div className="navbar-header">
+                    <a className="navbar-brand" href="">Moving Canvas</a>
                 </div>
-                <ul class="nav navbar-right">
-                    <li><a href="">Sign In</a></li>
+                <ul className="nav navbar-right">
+                    <li><a href="">Login</a></li>
                 </ul>
             </div>
         </nav>
-        <div class="header-container">
-            <div class="header-img">
-                {/* Top Area Image */}
-                <img src="https://static.pexels.com/photos/573294/pexels-photo-573294.jpeg" height="700" width="100%" alt="backgroundimg" />
+
+        <div className= "header-container">
+            <div className="header-img">
+                <img src="../images/architecture-black-and-white-buildings-316902.jpg" alt="background" height="600" width="100%"/>
             </div>
         </div>
-        <div class="welcome-container">
-            {/* Text over Top Area Image */}
-            <p class="welcome">Find your <b>Artist.</b></p>
+
+        <div className="welcome-container">
+            <p className="welcome"><b> Find the best tattoo artists in your location. </b></p>
         </div>
-        <div class="browse-container">
-            {/* Category Container */}
-            <div class="browse-text">
+
+        <div className="howdoesitwork">
+            <div className="row">
+                <div className="col-md">
+                    <p id="one">1</p>
+                    <p id="exone">Select your preferred categories</p>
+                </div>
+            </div>
+        </div>
+
+        <div className="browse-container">
+            <div className="browse-text">
                 <p>Choose your desired tattoo style to begin.</p>
             </div>
-            {/* Rows of Tattoo Categories Start */}
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="thumbnail">
+
+            <div className="row">
+                <div className="col">
+                    <div className="thumbnail">
                         <a href="/w3images/lights.jpg">
-                            <img src="https://image.ibb.co/kTJPhx/black_and_gray.png" class="cate-img" alt="Lights"/>
-                            <div class="caption">
-                                <p class="col-text">Black & Gray</p>
+                            <img src="https://image.ibb.co/kTJPhx/black_and_gray.png" alt="Lights" className="cate-img"/>
+                            <div className="caption">
+                                <p className="col-text">Black & Gray</p>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="thumbnail">
+                <div className="col">
+                    <div className="thumbnail">
                         <a href="/w3images/nature.jpg">
-                            <img src="https://preview.ibb.co/kwRo9c/dotwork.png" class="cate-img" alt="Nature"/>
-                            <div class="caption">
-                                <p class="col-text">Dotwork</p>
+                            <img src="https://preview.ibb.co/kwRo9c/dotwork.png" alt="Nature" className="cate-img"/>
+                            <div className="caption">
+                                <p className="col-text">Dotwork</p>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="thumbnail">
+                <div className="col">
+                    <div className="thumbnail">
                         <a href="/w3images/fjords.jpg">
-                            <img src="https://preview.ibb.co/kDokpc/watercolor.png" class="cate-img" alt="Fjords"/>
-                            <div class="caption">
-                                <p class="col-text">Watercolor</p>
+                            <img src="https://preview.ibb.co/kDokpc/watercolor.png" alt="Fjords" className="cate-img"/>
+                            <div className="caption">
+                                <p className="col-text">Watercolor</p>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="thumbnail">
+                <div className="col">
+                    <div className="thumbnail">
                         <a href="/w3images/nature.jpg">
-                            <img src="https://preview.ibb.co/kxHBUc/realism.png" class="cate-img" alt="Nature"/>
-                            <div class="caption">
-                                <p class="col-text">Realism</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                        <a href="/w3images/nature.jpg">
-                            <img src="https://image.ibb.co/k2Eapc/traditional.png" class="cate-img" alt="Traditional"/>
-                            <div class="caption">
-                                <p class="col-text">Traditional</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                        <a href="/w3images/nature.jpg">
-                        <img src="https://image.ibb.co/c2zfNx/japanese.png" class="cate-img" alt="Japanese"/>
-                            <div class="caption">
-                                <p class="col-text">Japanese</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                        <a href="/w3images/nature.jpg">
-                            <img src="https://image.ibb.co/kDPKFH/geometric.png" class="cate-img" alt="Geometric"/>
-                            <div class="caption">
-                                <p class="col-text">Geometric</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                        <a href="/w3images/nature.jpg">
-                            <img src="https://image.ibb.co/mDuEhx/tribal.png" class="cate-img" alt="Tribal"/>
-                            <div class="caption">
-                                <p class="col-text">Tribal</p>
+                            <img src="https://preview.ibb.co/kxHBUc/realism.png" alt="Nature" className="cate-img"/>
+                            <div className="caption">
+                                <p className="col-text">Realism</p>
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="thumbnail">
+            <div className="row">
+                <div className="col">
+                    <div className="thumbnail">
                         <a href="/w3images/nature.jpg">
-                            <img src= "https://image.ibb.co/c9vLNx/horror_surrealism.png" class="cate-img" alt="Nature"/>
-                            <div class="caption">
-                                <p class="col-text">Horror & Surrealism</p>
+                            <img src="https://image.ibb.co/k2Eapc/traditional.png" alt="Traditional" className="cate-img"/>
+                            <div className="caption">
+                                <p className="col-text">Traditional</p>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="thumbnail">
+                <div className="col">
+                    <div className="thumbnail">
                         <a href="/w3images/nature.jpg">
-                            <img src="https://image.ibb.co/hH1YaH/hand_poked.png" class="cate-img" alt="hand-poked"/>
-                            <div class="caption">
-                                <p class="col-text">Hand-Poked</p>
+                            <img src="https://image.ibb.co/c2zfNx/japanese.png" alt="Japanese" className="cate-img"/>
+                            <div className="caption">
+                                <p className="col-text">Japanese</p>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="thumbnail">
+                <div className="col">
+                    <div className="thumbnail">
                         <a href="/w3images/nature.jpg">
-                        <img src= "https://image.ibb.co/nKo1Uc/lettering.png" class="cate-img" alt="Lettering"/>
-                            <div class="caption">
-                                <p class="col-text">Lettering</p>
+                            <img src="https://image.ibb.co/kDPKFH/geometric.png" alt="Geometric" className="cate-img"/>
+                            <div className="caption">
+                                <p className="col-text">Geometric</p>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="thumbnail">
+                <div className="col">
+                    <div className="thumbnail">
                         <a href="/w3images/nature.jpg">
-                        <img src="https://image.ibb.co/m5ex2x/fineline.png" class="cate-img" alt="fineline"/>
-                            <div class="caption">
-                                <p class="col-text">Fine-Line</p>
+                        <img src="https://image.ibb.co/mDuEhx/tribal.png" alt="Tribal" className="cate-img"/>
+                            <div className="caption">
+                                <p className="col-text">Tribal</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col">
+                    <div className="thumbnail">
+                        <a href="/w3images/nature.jpg">
+                            <img src= "https://image.ibb.co/c9vLNx/horror_surrealism.png" alt="Nature" className="cate-img"/>
+                            <div className="caption">
+                                <p className="col-text">Horror & Surrealism</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div className="col">
+                    <div className="thumbnail">
+                        <a href="/w3images/nature.jpg">
+                            <img src="https://image.ibb.co/hH1YaH/hand_poked.png" alt="hand-poked" className="cate-img"/>
+                            <div className="caption">
+                                <p className="col-text">Hand-Poked</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div className="col">
+                    <div className="thumbnail">
+                        <a href="/w3images/nature.jpg">
+                        <img src= "https://image.ibb.co/nKo1Uc/lettering.png" alt="Lettering" className="cate-img"/>
+                            <div className="caption">
+                                <p className="col-text">Lettering</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div className="col-md-3">
+                    <div className="thumbnail">
+                        <a href="/w3images/nature.jpg">
+                            <img src="https://image.ibb.co/m5ex2x/fineline.png" alt="fineline" className="cate-img"/>
+                            <div className="caption">
+                                <p className="col-text">Fine-Line</p>
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="nextbutton">
-            {/* Next Button */} 
-            <button type="button" class="btn btn-secondary">Next</button>
+
+        <div className="nextbutton">
+            <button type="button" className="btn btn-secondary">Next</button>
         </div>
     </div>
 

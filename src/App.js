@@ -4,6 +4,9 @@ import LandingPage from './components/LandingPage';
 import ArtistSignUp from './components/ArtistSignUp';
 import HomePage from './components/HomePage';
 import UserPrefForm from './components/UserPrefForm';
+import UserProfilePage from './components/UserProfilePage';
+import ArtistProfilePage from './components/ArtistProfilePage';
+import LoginPage from './components/LoginPage';
 
 const Landing = () => (
   <div>
@@ -29,6 +32,24 @@ const UserPref = () => (
   </div>
 )
 
+const UserProfile = () => (
+  <div>
+    <UserProfilePage/>
+  </div>
+)
+
+const ArtistProfile = () => (
+  <div>
+    <ArtistProfilePage/>
+  </div>
+)
+
+const Login = () => (
+  <div>
+    <LoginPage/>
+  </div>
+)
+
 const AppRoutes = () => (
   <Router>
     <div>
@@ -36,6 +57,9 @@ const AppRoutes = () => (
       <Route path="/home" component={Home}/>
       <Route path="/artistsignup" component={ArtSignUp}/>
       <Route path="/userprefform" component={UserPref}/>
+      <Route path="/userprofile" component={UserProfile}/>
+      <Route path="/artistprofile" component={ArtistProfile}/>
+      <Route path="/login" component={Login}/>
     </div>
   </Router>
 )
