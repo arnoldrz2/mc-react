@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/reset.css";
 
 const LoginPage = () => (
-    <div>
+    <div className="container">
         <div className="background"></div>
             <p className="topwelcome">Hey you, welcome back!</p>
 

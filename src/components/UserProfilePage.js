@@ -52,6 +52,6 @@ const UserProfilePage = () => (
             <p className="footer">Copyright Moving Canvas 2018</p>
         </footer>
     </div>
-)
+);
 
 export default UserProfilePage;

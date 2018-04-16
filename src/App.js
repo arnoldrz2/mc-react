@@ -7,6 +7,7 @@ import UserSignUp from './components/UserSignUp';
 import UserProfilePage from './components/UserProfilePage';
 import ArtistProfilePage from './components/ArtistProfilePage';
 import LoginPage from './components/LoginPage';
+import ListDisplay from './components/ListDisplay';
 
 const Landing = () => (
   <div>
@@ -50,6 +51,12 @@ const Login = () => (
   </div>
 )
 
+const ListDisp = () => (
+  <div>
+    <ListDisplay/>
+  </div>
+)
+
 const AppRoutes = () => (
   <Router>
     <div>
@@ -60,6 +67,7 @@ const AppRoutes = () => (
       <Route path="/userprofile" component={UserProfile}/>
       <Route path="/artistprofile" component={ArtistProfile}/>
       <Route path="/login" component={Login}/>
+      <Route path="/listdisplay" component={ListDisp}/>
     </div>
   </Router>
 )
