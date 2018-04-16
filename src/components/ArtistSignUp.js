@@ -104,7 +104,9 @@ const ArtistSignUp = () => (
               </div>
           </div>
       </div>
-
+      <div className="nextbutton">
+          <button type="button" className="btn btn-secondary">Next</button>
+      </div>
     </form>
   </div>
 );

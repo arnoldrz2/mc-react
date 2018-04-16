@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import LandingPage from './components/LandingPage';
 import ArtistSignUp from './components/ArtistSignUp';
 import HomePage from './components/HomePage';
-import UserPrefForm from './components/UserPrefForm';
+import UserSignUp from './components/UserSignUp';
 import UserProfilePage from './components/UserProfilePage';
 import ArtistProfilePage from './components/ArtistProfilePage';
 import LoginPage from './components/LoginPage';
@@ -26,9 +26,9 @@ const ArtSignUp = () => (
   </div>
 )
 
-const UserPref = () => (
+const UsrSignUp = () => (
   <div>
-    <UserPrefForm/>
+    <UserSignUp/>
   </div>
 )
 
@@ -56,7 +56,7 @@ const AppRoutes = () => (
       <Route exact path="/" component={Landing}/>
       <Route path="/home" component={Home}/>
       <Route path="/artistsignup" component={ArtSignUp}/>
-      <Route path="/userprefform" component={UserPref}/>
+      <Route path="/usersignup" component={UsrSignUp}/>
       <Route path="/userprofile" component={UserProfile}/>
       <Route path="/artistprofile" component={ArtistProfile}/>
       <Route path="/login" component={Login}/>
