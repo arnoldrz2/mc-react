@@ -1,16 +1,17 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import "../styles/reset.css";
 import "../styles/ProfilePage.css";
 
 const UserProfilePage = () => (
     <div>
-        <nav className="navbar navbar-deafult navbar-fixed-top">
+       <nav className="navbar navbar-deafult navbar-fixed-top">
             <div className="container-fluid">
                 <div className="navbar-header">
-                    <a className="navbar-brand">Moving Canvas</a>
+                    <p className="navbar-brand">Moving Canvas</p>
                 </div>
                 <ul className="nav navbar-right">
-                    <li><a href="">Name</a></li>
+                    <Link to="/login"><li><a>Login</a></li></Link>
                 </ul>
             </div>
         </nav>

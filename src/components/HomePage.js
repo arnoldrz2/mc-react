@@ -1,24 +1,23 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import "../styles/reset.css";
 import "../styles/HomePage.css";
 
 const HomePage = () => (
-    <div className="hpwrap">
+    <div>
         <nav className="navbar navbar-deafult navbar-fixed-top">
             <div className="container-fluid">
                 <div className="navbar-header">
-                    <a className="navbar-brand" href="">Moving Canvas</a>
+                    <p className="navbar-brand">Moving Canvas</p>
                 </div>
                 <ul className="nav navbar-right">
-                    <li><a href="">Login</a></li>
+                    <Link to="/login"><li><a>Login</a></li></Link>
                 </ul>
             </div>
         </nav>
 
         <div className= "header-container">
-            <div className="header-img">
-                <img src="../images/architecture-black-and-white-buildings-316902.jpg" alt="background" height="600" width="100%"/>
-            </div>
+            <div id="header-img"></div>
         </div>
 
         <div className="welcome-container">
