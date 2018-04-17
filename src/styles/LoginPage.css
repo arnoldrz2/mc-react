@@ -1,3 +1,45 @@
 .navbar-brand {
     color: white;
 }
+
+#topwelcome {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #000000c4;
+}
+
+.total-form {
+    font-family: 'Oxygen', sans-serif;
+    color: #000000c4;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+.checkbox {
+    margin-bottom: 10px;
+}
+
+#gSignInWrapper {
+    font-family: 'Oxygen', sans-serif;
+    color: #000000c4;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+#google {
+    font-weight: bold;
+}
+
+#signup {
+    font-family: 'Oxygen', sans-serif;
+    color: #000000c4;
+}
+
+#signup p {
+    margin-bottom: 20px;
+}

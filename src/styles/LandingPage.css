@@ -39,7 +39,7 @@ header {
 }
 
 .signin-text.btn.btn-secondary{
-  margin-left: 1300px;
+  left: 50%;
   font: black;
   text-transform: lowercase;
   background-color: transparent;

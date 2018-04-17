@@ -8,10 +8,10 @@ const HomePage = () => (
         <nav className="navbar navbar-deafult navbar-fixed-top">
             <div className="container-fluid">
                 <div className="navbar-header">
-                    <p className="navbar-brand">Moving Canvas</p>
+                    <Link to="/home"><p className="navbar-brand">Moving Canvas</p></Link>
                 </div>
                 <ul className="nav navbar-right">
-                    <Link to="/login"><li><a>Login</a></li></Link>
+                    <Link to="/login"><li><p>Login</p></li></Link>
                 </ul>
             </div>
         </nav>
@@ -166,9 +166,10 @@ const HomePage = () => (
             </div>
         </div>
 
-        <div className="nextbutton">
+        {/* <div className="nextbutton">
             <button type="button" className="btn btn-secondary">Next</button>
-        </div>
+        </div> */}
+
     </div>
 
 );

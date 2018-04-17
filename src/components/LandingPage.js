@@ -7,7 +7,7 @@ import "../styles/LandingPage.css";
 const LandingPage = () => (
     <header>
         <div id="signbutton">
-        <Link to="/login"><button type="button" className="signin-text btn btn-secondary">Sign In</button></Link>
+            <Link to="/login"><button type="button" className="signin-text btn btn-secondary">Sign In</button></Link>
         </div>
             <div className="intro-text">
                 <div className="intro-lead-in">Moving Canvas</div>

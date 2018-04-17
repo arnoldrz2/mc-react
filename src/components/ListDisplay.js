@@ -7,7 +7,7 @@ const ListDisplay = () => (
         <nav className="navbar navbar-deafult navbar-fixed-top">
             <div className="container-fluid">
                 <div className="navbar-header">
-                    <p className="navbar-brand">Moving Canvas</p>
+                    <Link to="/home"><p className="navbar-brand">Moving Canvas</p></Link>
                 </div>
                 <ul className="nav navbar-right">
                     <Link to="/login"><li><a>Login</a></li></Link>
@@ -118,6 +118,9 @@ const ListDisplay = () => (
                 </div>            
             </div>
         </div>
+        <footer>
+            <p className="footer">Copyright Moving Canvas 2018</p>
+        </footer>
     </div>
 );
 

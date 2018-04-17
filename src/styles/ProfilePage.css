@@ -76,6 +76,12 @@ html {
     margin-top: 100px;
     margin-left: 825px;
   }
+
+  .picture-container-user {
+    margin-top: 100px;
+    margin-left: 825px;
+    image: url("../images/pexels-photo-106567.jpg");
+  }
   
   
   .information-container {
@@ -124,33 +130,6 @@ html {
     color: #e812ab;
   }
   
-  .btn.btn-secondary {
-    margin-left: 675px;
-    margin-right: 600px;
-    margin-bottom: 50px;
-    padding: 14px 28px;
-    color: black;
-    border: 2px solid black;
-    background-color: transparent;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 16;
-    font-family: 'Source Sans Pro', sans-serif;
-    position: relative;
-  }
-  
-  .btn.btn-secondary:hover {
-    padding: 14px 28px;
-    background-color: black;
-    color: #e812ab;
-    border: 2px solid #e812ab;
-  }
-  
-  .btn.btn-secondary:active {
-    background-color: white;
-    color: black;
-  }
-  
   .container-upload {
     text-align: center;
     margin-left: 30px;
@@ -193,12 +172,6 @@ html {
      height: 600px;
      overflow: scroll;
   }
-  
-  .submitbutton {
-    margin-top: 200px;
-    margin-bottom: -100px;
-  }
-  
   
   .footer {
     margin-bottom: 0px;

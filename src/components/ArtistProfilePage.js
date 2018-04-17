@@ -8,10 +8,10 @@ const ArtistProfilePage = () => (
        <nav className="navbar navbar-deafult navbar-fixed-top">
             <div className="container-fluid">
                 <div className="navbar-header">
-                    <p className="navbar-brand">Moving Canvas</p>
+                    <Link to="/home"><p className="navbar-brand">Moving Canvas</p></Link>
                 </div>
                 <ul className="nav navbar-right">
-                    <Link to="/login"><li><a>Login</a></li></Link>
+                    <Link to="/login"><li><p>Login</p></li></Link>
                 </ul>
             </div>
         </nav>
@@ -39,7 +39,7 @@ const ArtistProfilePage = () => (
                 <div className="panel-body">
                     {/* <!-- Standard Form --> */}
                     <h4>Select files from your computer</h4>
-                    <form method="post" enctype="multipart/form-data" id="js-upload-form">
+                    <form method="post" encType="multipart/form-data" id="js-upload-form">
                         <div className="form-inline">
                             <div className="form-group">
                                 <input type="file" name="files" id="js-upload-files" multiple/>
@@ -51,10 +51,6 @@ const ArtistProfilePage = () => (
             </div>
         </div>
         {/* <!-- /container --> */}
-
-        <div className="submitbutton">
-            <button type="button" className="btn btn-secondary">Next</button>
-        </div>
 
         <footer>
             <p className="footer">Copyright Moving Canvas 2018</p>
