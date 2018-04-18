@@ -18,7 +18,7 @@ router.post("/users", function(req, res) {
         req.body.user_password,
         req.body.user_zip
     ], function(data) {
-        res.render("account");
+        res.redirect("/home");
     });
 });
 

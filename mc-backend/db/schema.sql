@@ -6,8 +6,8 @@ CREATE TABLE users
 	id INT NOT NULL AUTO_INCREMENT,
 	user_first_name VARCHAR(30),
 	user_last_name VARCHAR(30),
-	user_email VARCHAR(65) NOT NULL,
-	user_password VARCHAR(30) NOT NULL,
+	user_email VARCHAR(65),
+	user_password VARCHAR(30),
 	user_favorite_artist VARCHAR(65),
 	user_favorite_piece VARCHAR(65),
 	user_zip VARCHAR(10),
@@ -19,14 +19,14 @@ CREATE TABLE users
 CREATE TABLE artists
 (
 	id INT NOT NULL AUTO_INCREMENT,
-	artist_first_name VARCHAR(30) NOT NULL,
-	artist_last_name VARCHAR(30) NOT NULL,
-	artist_gender ENUM('m', 'f') NOT NULL,
-	artist_email VARCHAR(65) NOT NULL,
-	artist_password VARCHAR(30) NOT NULL,
+	artist_first_name VARCHAR(30),
+	artist_last_name VARCHAR(30),
+	artist_gender ENUM('m', 'f'),
+	artist_email VARCHAR(65),
+	artist_password VARCHAR(30),
 	artist_phone VARCHAR(20),
 	artist_studio VARCHAR(65),
-	artist_certified BOOLEAN NOT NULL,
+	artist_certified BOOLEAN,
 	PRIMARY KEY (id)
 );
 

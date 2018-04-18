@@ -25,40 +25,43 @@ const UserPrefForm = () => (
                             {/* <!-- First Name --> */}
                             <div className="form-group col">
                                 <label htmlFor="user_first_name">First Name</label>
-                                <input type="text" className="form-control" name="user_first_name" id="user_first_name"/>
+                                <input type="text" className="form-control" name="user_first_name" placeholder="Enter First Name"/>
                             </div>
                             {/* <!-- Last Name --> */}
                             <div className="form-group col">
                                 <label htmlFor="user_last_name">Last Name</label>
-                                <input type="text" className="form-control" name="user_last_name" id="last_name"/>
+                                <input type="text" className="form-control" name="user_last_name" placeholder="Enter Last Name"/>
                             </div>
                         </div>
                         {/* <!-- Email --> */}
                         <div className="row">
                             <div className="form-group col">
                                 <label htmlFor="user_email">Email</label>
-                                <input type="email" className="form-control" name="user_email" id="email"/>
+                                <input type="email" className="form-control" name="user_email" placeholder="Enter Email"/>
                             </div>
                         </div>
                         {/* <!-- Password --> */}
                         <div className="row">
                             <div className="form-group col">
-                                <label htmlFor="password">Password</label>
-                                <input type="password" className="form-control" name="user_password "id="password"/>
+                                <label htmlFor="user_password">Password</label>
+                                <input type="password" className="form-control" name="user_password" placeholder="Enter Password"  
+                                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" 
+                                    required/>
                             </div>
                         </div>
                         {/* Zip Code */}
                         <div className="row">
                             <div className="form-group col">
-                                <label htmlFor="zip">Zip Code</label>
-                                <input type="text" className="form-control" name="user_zip" id="zip"/>
+                                <label htmlFor="user_zip">Zip Code</label>
+                                <input type="text" className="form-control" name="user_zip" placeholder="Enter Zip Code"/>
                             </div>
                         </div>
-                        <h2 className="CategoriesCont">Your tattoo artist preferences</h2>
+                        {/* <h2 className="CategoriesCont">Your tattoo artist preferences</h2>
                         
-                        <div className="GenderSelection">
+                        <div className="GenderSelection"> */}
                         {/* User Preference for Artist Gender */}
-                        <p>Do you have a tattoo artist gender preference?(leave blank if no preference)</p>
+                        {/* <p>Do you have a tattoo artist gender preference?(leave blank if no preference)</p>
                             <div className="row">
                                 <div className="col">
                                     <div className="form-check">
@@ -72,9 +75,9 @@ const UserPrefForm = () => (
                                 </div>
                             </div>
                         </div>
-                        <div className="ArtistExperience">
+                        <div className="ArtistExperience"> */}
                         {/* User Preference for Artist Certification */}
-                        <p> Do you have a preference for experience?(leave blank if no preference)</p>
+                        {/* <p> Do you have a preference for experience?(leave blank if no preference)</p>
                             <div className="row">
                                 <div className="col">
                                     <div className="form-check">
@@ -87,9 +90,9 @@ const UserPrefForm = () => (
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="nextbutton">
-                            <button type="submit" className="btn btn-secondary">Next</button>
+                            <button type="submit" className="btn btn-secondary">Submit</button>
                         </div>
                     </form>
                 </div>
