@@ -57,40 +57,40 @@ const UserPrefForm = () => (
                                 <input type="text" className="form-control" name="user_zip" placeholder="Enter Zip Code"/>
                             </div>
                         </div>
-                        {/* <h2 className="CategoriesCont">Your tattoo artist preferences</h2>
+                        <h2 className="CategoriesCont">Your tattoo artist preferences</h2>
                         
-                        <div className="GenderSelection"> */}
+                        <div className="GenderSelection">
                         {/* User Preference for Artist Gender */}
-                        {/* <p>Do you have a tattoo artist gender preference?(leave blank if no preference)</p>
+                        <p>Do you have a tattoo artist gender preference?(leave blank if no preference)</p>
                             <div className="row">
                                 <div className="col">
                                     <div className="form-check">
-                                        <input className="form-check-input" name="options" type="radio" id="male" value="m" />
+                                        <input className="form-check-input" name="options1" type="radio" id="male" value="m" />
                                         <label className="form-check-label" htmlFor="gendermale">Male</label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" name="options" type="radio" id="female" value="f" />
+                                        <input className="form-check-input" name="options1" type="radio" id="female" value="f" />
                                         <label className="form-check-label" htmlFor="genderfemale">Female</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="ArtistExperience"> */}
+                        <div className="ArtistExperience">
                         {/* User Preference for Artist Certification */}
-                        {/* <p> Do you have a preference for experience?(leave blank if no preference)</p>
+                        <p> Do you have a preference for experience?(leave blank if no preference)</p>
                             <div className="row">
                                 <div className="col">
                                     <div className="form-check">
-                                        <input className="form-check-input" name="options" type="radio" id="certified" value="0" />
+                                        <input className="form-check-input" name="options2" type="radio" id="certified" value="0" />
                                         <label className="form-check-label" htmlFor="certified">Certified</label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" name="options" type="radio" id="notcertified" value="1" />
+                                        <input className="form-check-input" name="options2" type="radio" id="notcertified" value="1" />
                                         <label className="form-check-label" htmlFor="notcertified">Not Certified</label>
                                     </div>
                                 </div>
                             </div>
-                        </div> */}
+                        </div>
                         <div className="nextbutton">
                             <button type="submit" className="btn btn-secondary">Submit</button>
                         </div>

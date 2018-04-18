@@ -21,11 +21,11 @@ CREATE TABLE artists
 	id INT NOT NULL AUTO_INCREMENT,
 	artist_first_name VARCHAR(30),
 	artist_last_name VARCHAR(30),
-	artist_gender ENUM('m', 'f'),
 	artist_email VARCHAR(65),
 	artist_password VARCHAR(30),
 	artist_phone VARCHAR(20),
 	artist_studio VARCHAR(65),
+	artist_gender ENUM('m', 'f'),
 	artist_certified BOOLEAN,
 	PRIMARY KEY (id)
 );

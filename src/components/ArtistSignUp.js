@@ -27,42 +27,45 @@ const ArtistSignUp = () => (
                 </div>
 
                 {/* <!-- Artist Form --> */}
-                <form>
+                <form action="/artists" method="POST">
                   {/* <!-- Name --> */}
                   <div className="row">
                     {/* <!-- First Name --> */}
                     <div className="form-group col">
-                      <label htmlFor="first_name">First Name</label>
-                      <input type="text" className="form-control" id="first_name"/>
+                      <label htmlFor="artist_first_name">First Name</label>
+                      <input type="text" className="form-control" name="artist_first_name" placeholder="Enter First Name"/>
                     </div>
                     {/* <!-- Last Name --> */}
                     <div className="form-group col">
-                      <label htmlFor="last_name">Last Name</label>
-                      <input type="text" className="form-control" id="last_name"/>
+                      <label htmlFor="artist_last_name">Last Name</label>
+                      <input type="text" className="form-control" name="artist_last_name" placeholder="Enter Last Name"/>
                     </div>
                   </div>
 
                   {/* <!-- Email --> */}
                   <div className="row">
                       <div className="form-group col">
-                        <label htmlFor="email">Email</label>
-                        <input type="email" className="form-control" id="email"/>
+                        <label htmlFor="artist_email">Email</label>
+                        <input type="email" className="form-control" name="artist_email" placeholder="Enter Email"/>
                       </div>
                   </div>
 
                   {/* <!-- Password --> */}
                   <div className="row">
                     <div className="form-group col">
-                      <label htmlFor="password">Password</label>
-                      <input type="password" className="form-control" id="password"/>
+                      <label htmlFor="artist_password">Password</label>
+                      <input type="password" className="form-control" name="artist_password" placeholder="Enter Password"  
+                          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                          title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" 
+                          required/>
                     </div>
                   </div>
 
                   {/* <!-- Phone --> */}
                   <div className="row">
                     <div className="form-group col">
-                      <label htmlFor="telephone">Telephone</label>
-                      <input type="tel" className="form-control" id="telephone"/>
+                      <label htmlFor="artist_phone">Telephone</label>
+                      <input type="tel" className="form-control" name="artist_phone" placeholder="Enter Phone Number"/>
                     </div>
                   </div>
 
@@ -70,8 +73,8 @@ const ArtistSignUp = () => (
                   {/* <!-- Studio --> */}
                   <div className="row">
                       <div className="form-group col">
-                        <label htmlFor="studio">Studio</label>
-                        <input type="text" className="form-control" id="studio"/>
+                        <label htmlFor="artist_studio">Studio</label>
+                        <input type="text" className="form-control" name="artist_studio" placeholder="Enter Studio Name"/>
                       </div>
                   </div>
 
@@ -80,12 +83,12 @@ const ArtistSignUp = () => (
                     <div className="col GenderSelection">
                       <p>Gender</p>
                         <div className="form-check">
-                          <input className="form-check-input" type="radio" name="options" id="male" value="male"/>
-                          <label className="form-check-label" htmlFor="male">Male</label>
+                          <input className="form-check-input" type="radio" name="options1" id="male" value="m"/>
+                          <label className="form-check-label" htmlFor="gendermale">Male</label>
                         </div>
                         <div className="form-check">
-                            <input className="form-check-input" type="radio" name="options" id="female" value="female"/>
-                            <label className="form-check-label" htmlFor="female">Female</label>
+                            <input className="form-check-input" type="radio" name="options1" id="female" value="f"/>
+                            <label className="form-check-label" htmlFor="genderfemale">Female</label>
                         </div>
                     </div>
                   </div>
@@ -95,18 +98,18 @@ const ArtistSignUp = () => (
                       <div className="col ArtistExperience">
                         <p>Are you a certified tattoo artist?</p>
                           <div className="form-check">
-                            <input className="form-check-input" type="radio" name="options" id="certified" value="certified"/>
+                            <input className="form-check-input" type="radio" name="options2" id="certified" value="0"/>
                             <label className="form-check-label" htmlFor="certified">Certified</label>
                           </div>
                           <div className="form-check">
-                            <input className="form-check-input" type="radio" name="options" id="not-certified" value="not-certified"/>
-                            <label className="form-check-label" htmlFor="not-certified">Not-Certified</label>
+                            <input className="form-check-input" type="radio" name="options2" id="not-certified" value="1"/>
+                            <label className="form-check-label" htmlFor="notcertified">Not-Certified</label>
                           </div>
                       </div>
                   </div>
 
                   <div className="nextbutton">
-                      <button type="button" className="btn btn-secondary">Next</button>
+                      <button type="submit" className="btn btn-secondary">Next</button>
                   </div>
                 </form>
             </div>
