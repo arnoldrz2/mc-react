@@ -24,34 +24,34 @@ const UserPrefForm = () => (
                         <div className="row">
                             {/* <!-- First Name --> */}
                             <div className="form-group col">
-                                <label htmlFor="first_name">First Name</label>
-                                <input type="text" className="form-control" id="user_first_name"/>
+                                <label htmlFor="user_first_name">First Name</label>
+                                <input type="text" className="form-control" name="user_first_name" id="user_first_name"/>
                             </div>
                             {/* <!-- Last Name --> */}
                             <div className="form-group col">
-                                <label htmlFor="last_name">Last Name</label>
-                                <input type="text" className="form-control" id="user_last_name"/>
+                                <label htmlFor="user_last_name">Last Name</label>
+                                <input type="text" className="form-control" name="user_last_name" id="last_name"/>
                             </div>
                         </div>
                         {/* <!-- Email --> */}
                         <div className="row">
                             <div className="form-group col">
-                                <label htmlFor="email">Email</label>
-                                <input type="email" className="form-control" id="user_email"/>
+                                <label htmlFor="user_email">Email</label>
+                                <input type="email" className="form-control" name="user_email" id="email"/>
                             </div>
                         </div>
                         {/* <!-- Password --> */}
                         <div className="row">
                             <div className="form-group col">
                                 <label htmlFor="password">Password</label>
-                                <input type="password" className="form-control" id="user_password"/>
+                                <input type="password" className="form-control" name="user_password "id="password"/>
                             </div>
                         </div>
                         {/* Zip Code */}
                         <div className="row">
                             <div className="form-group col">
                                 <label htmlFor="zip">Zip Code</label>
-                                <input type="text" className="form-control" id="user_zip"/>
+                                <input type="text" className="form-control" name="user_zip" id="zip"/>
                             </div>
                         </div>
                         <h2 className="CategoriesCont">Your tattoo artist preferences</h2>

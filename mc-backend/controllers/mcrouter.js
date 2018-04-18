@@ -16,7 +16,7 @@ router.post("/users", function(req, res) {
         req.body.user_last_name,
         req.body.user_email,
         req.body.user_password,
-        req.body.user_zip,
+        req.body.user_zip
     ], function(data) {
         res.render("account");
     });
